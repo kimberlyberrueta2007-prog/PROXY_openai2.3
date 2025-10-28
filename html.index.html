@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DiseñaArte IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="galaxy-bg"></div>
+
+<section id="welcome-screen" class="fade-in">
+  <h1>✨ Bienvenido a DiseñaArte IA ✨</h1>
+  <button id="enterBtn">Entrar al Estudio</button>
+</section>
+
+<main id="studio" class="hidden">
+  <aside id="chat-area">
+    <h2>Asesor</h2>
+    <div id="chat-box"></div>
+    <div id="chat-inputs">
+      <input type="text" id="userInput" placeholder="Escribe aquí..." />
+      <button id="sendBtn">Enviar</button>
+    </div>
+
+    <div class="controls">
+      <button id="createBtn">Modo Crear 🎨</button>
+      <button id="teachBtn">Modo Asesorar 🤖</button>
+      <input type="color" id="colorPicker" value="#000000" />
+      <label for="brushSize">Tamaño:</label>
+      <input type="range" id="brushSize" min="1" max="15" value="3" />
+      <button id="eraseBtn">Borrar</button>
+      <button id="clearBtn">Limpiar</button>
+      <button id="saveBtn">Guardar Imagen</button>
+      <button id="exitBtn">Despedirse del asesor</button>
+    </div>
+  </aside>
+
+  <section id="draw-area">
+    <canvas id="drawBoard" width="800" height="600"></canvas>
+  </section>
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
