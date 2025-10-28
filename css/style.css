@@ -128,3 +128,10 @@ main {
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(30,144,255,0.5);
 }
+.generated-image {
+  width: 300px;
+  border-radius: 12px;
+  margin: 8px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
